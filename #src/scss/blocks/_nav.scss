@@ -1,0 +1,29 @@
+.nav {
+    &__wrapper {
+        display: flex;
+        width: 420px;
+        min-height: 23px;
+        list-style-type:none;
+        justify-content: space-between;
+    }
+    &__item-active {
+        color:#EB0029;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        &:after {
+            content: "";
+            background: url("../../img/icon-menu/icon-menu.png") no-repeat;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top:8px;
+            right: -24px;
+        }
+    }
+
+}
